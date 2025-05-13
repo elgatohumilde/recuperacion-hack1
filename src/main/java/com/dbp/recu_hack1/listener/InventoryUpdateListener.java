@@ -21,6 +21,6 @@ public class InventoryUpdateListener {
     @EventListener
     @Async
     public void handleOrderCreatedEvent(OrderCreatedEvent event) {
-        logger.info("New available stock: ", 10000 - orderRepository.findAll().size());
+        logger.info("New available stock: {}", 10000 - orderRepository.findAll().size());
     }
 };
