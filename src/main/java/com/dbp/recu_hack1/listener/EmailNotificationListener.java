@@ -17,4 +17,4 @@ public class EmailNotificationListener {
         String email = event.getOrder().getEmail();
         logger.info("Email sent to {} confirming order {}", email, event.getOrder().getId());
     }
-}
+};

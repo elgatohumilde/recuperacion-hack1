@@ -16,4 +16,4 @@ public class AuditLogListener {
         logger.info("Audit log: Order {} placed by {}",
                 event.getOrder().getId(), event.getOrder().getEmail());
     }
-}
+};

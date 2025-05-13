@@ -15,4 +15,4 @@ public class OrderCreatedEvent extends ApplicationEvent {
     public Order getOrder() {
         return order;
     }
-}
+};

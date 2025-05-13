@@ -16,4 +16,4 @@ public class InventoryUpdateListener {
         logger.info("Inventory updated for order {}: ",
                 event.getOrder().getId());
     }
-}
+};
