@@ -1,14 +1,13 @@
 package com.dbp.recu_hack1.domain;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
 import lombok.Data;
 
 @Entity
+@Table(name = "customer_order")
 @Data
+
 public class Order {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -19,4 +18,7 @@ public class Order {
 
     @Column(nullable = false, unique = true)
     private String email;
+
+
+
 };
