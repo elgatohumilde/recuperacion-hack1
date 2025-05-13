@@ -1,7 +1,6 @@
 package com.dbp.recu_hack1.domain;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
 import lombok.Data;
 
 @Entity
@@ -18,7 +17,5 @@ public class Order {
 
     @Column(nullable = false, unique = true)
     private String email;
-
-
 
 };

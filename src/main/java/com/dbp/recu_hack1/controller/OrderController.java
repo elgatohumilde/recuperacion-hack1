@@ -30,7 +30,7 @@ public class OrderController {
         Order newOrder = orderRepository.findAll().get(0);
 
         eventPublisher.publishEvent(new OrderCreatedEvent(this, newOrder));
-        return "New order: " + newOrder.getId();
+        return "New order created";
     }
 
 }
